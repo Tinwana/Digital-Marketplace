@@ -1,7 +1,7 @@
 "use client";
 import { Button, Image } from "@/components/ui";
 import { PRODUCT_CATEGORIES } from "@/config";
-import { cn } from "@/utils/cn";
+import { cn } from "@/utils";
 import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { FC } from "react";
