@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Home",
   description: "Make your life confidence",
-  icons: "/favicon.ico",
+  icons: "/favicon .ico",
 };
 
 export default function RootLayout({
