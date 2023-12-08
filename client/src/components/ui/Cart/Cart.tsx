@@ -8,8 +8,13 @@ import {
   SheetTrigger,
 } from "../sheet";
 import { ShoppingCart } from "lucide-react";
+import { Separator } from "../separator";
+import { formatPrice } from "@/utils";
 
 const Cart: FC = () => {
+  const itemCount = 1;
+  const fee = 32;
+
   return (
     <Sheet>
       <SheetTrigger className="group -m-2 flex items-center p-2 ">
@@ -25,6 +30,28 @@ const Cart: FC = () => {
         <SheetHeader className="space-y-2.5 pr-6">
           <SheetTitle>Cart (0)</SheetTitle>
         </SheetHeader>
+        {itemCount > 0 ? (
+          <>
+            <div className="flex w-full flex-col pr-6">cart items</div>
+            <div className="space-y-4 pr-6 ">
+              <Separator />
+              <div className="space-y-1.5 pr-6 ">
+                <div className="flex">
+                  <span className="flex-1">shipping</span>
+                  <span className="">Free</span>
+                </div>
+                <div className="flex">
+                  <span className="flex-1">Transaction Fee</span>
+                  <span className="">{formatPrice(fee)}</span>
+                </div>
+              </div>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className=""></div>
+          </>
+        )}
       </SheetContent>
     </Sheet>
   );
