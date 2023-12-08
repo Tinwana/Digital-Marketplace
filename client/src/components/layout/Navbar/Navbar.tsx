@@ -1,11 +1,10 @@
 import { FC } from "react";
 import Container from "../Container";
 import Link from "next/link";
-import { Icons, buttonVariants } from "@/components/ui";
+import { Icons } from "@/components/ui";
 import NavItems from "./NavItems";
-import { Span } from "next/dist/trace";
 import NavbarUser from "./NavbarUser";
-import { Cart } from "@/components/ui";
+import Cart from "./Cart";
 
 const Navbar: FC = () => {
   const user = null;
