@@ -14,7 +14,7 @@ export default function Home() {
           </h1>
           <p className="mt-6 text-lg max-w-prose text-muted-foreground">
             Welcome to DigitalHippo. Every assets on our platform is verified by
-            our team to ensure out highest quality standards{" "}
+            our team to ensure out highest quality standards!{" "}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-6 items-center justify-center">
             <Link href="/products" className={buttonVariants()}>
